@@ -673,6 +673,149 @@
       <owned-items />
       <style class="default" />
     </item>
+    <item id="di799355052195536429" cid="IFC001" type="uml-interface" name="Interface1" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 17:32:35">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di516338271116137369" cid="CMT001" type="comment" name="Comment" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:33:23">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <comment />
+    </item>
+    <item id="di843202358945059666" cid="CN001" type="comment-connector" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:33:23">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di935194282167357331" cid="C003" type="class" name="Class3" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:27:04">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <attributes />
+      <operations />
+      <template-parameters>
+        <source-codes />
+      </template-parameters>
+    </item>
+    <item id="di192250621876736148" cid="ELEM001" type="association-class-link" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:27:04">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di827936005531390514" cid="REL018" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:39:17">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <relation from="di812237666831779896" to="di335224315309091864">
+        <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+        <end-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+      </relation>
+    </item>
+    <item id="di274238783182939797" cid="IFC010" type="uml-interface" name="show()" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:38:57">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di335224315309091864" cid="IFC011" type="uml-interface" name="loadGroups(groups)" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:39:17">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di729987936718177869" cid="REL017" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:38:57">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <relation from="di641317211938466476" to="di274238783182939797">
+        <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+        <end-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+      </relation>
+    </item>
+    <item id="di641317211938466476" cid="PORT011" type="port" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:38:45">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di216664011467536070" cid="IFC012" type="uml-interface" name="loadSymbols(symbols)" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:40:00">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
+    <item id="di595314193702143654" cid="REL019" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:40:00">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+      <relation from="di253212336306669154" to="di216664011467536070">
+        <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+        <end-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+      </relation>
+    </item>
+    <item id="di261315522868804509" cid="CMT002" type="comment" name="Comment" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:55:04">
+      <stereotypes />
+      <tagged-values />
+      <documentation>
+        <text>
+          <content>
+            <paragraph line-spacing="1">
+              <p index="0">
+                <t />
+                <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                  <text>
+                    <solid-brush color="#FF000000" />
+                  </text>
+                </style>
+              </p>
+            </paragraph>
+          </content>
+        </text>
+      </documentation>
+      <cooperation>
+        <participants />
+        <comments />
+      </cooperation>
+      <associated-diagrams />
+      <owned-items />
+      <style background-type="vertical-linear" background-color="#FFFFFF55" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-2,-2" shadow-size="6,6" shadow-visible="true" shadow-color="#50000000" shadow-radius="6" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Courier New;9.75;B" name-horizontal-alignment="left" name-vertical-alignment="top" part-header-color="#FF1E1E1E" part-header-font="Microsoft Sans Serif;9;I" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Microsoft Sans Serif;10;" text-horizontal-alignment="left" text-vertical-alignment="center" tagged-value-color="#FF1E1E1E" tagged-value-font="Microsoft Sans Serif;9;I" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Microsoft Sans Serif;9;I" stereotype-horizontal-alignment="left" stereotype-vertical-alignment="top" />
+      <comment>main() {
+factory = new DefaultAnalysisFactory();
+ui = new DefaultUI();
+dataCenter = new DefaultDataCenter();
+controller = new DefaultController(factory, ui, dataCenter);
+controller.run();
+}</comment>
+    </item>
+    <item id="di137854952570771548" cid="CN002" type="comment-connector" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:55:04">
+      <stereotypes />
+      <tagged-values />
+      <associated-diagrams />
+      <owned-items />
+      <style class="default" />
+    </item>
   </items>
   <models>
     <model id="p577004025224912617" name="Requirements" type="model" namespace="" order-index="1">
@@ -702,7 +845,7 @@
           </authors>
           <description />
           <creation-date>05/09/2013 17:56:45</creation-date>
-          <change-date>11/26/2013 21:28:44</change-date>
+          <change-date>11/27/2013 17:22:56</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -2472,6 +2615,315 @@
             <owned-items />
             <style class="default" />
           </item>
+          <item id="di462991661497459594" cid="UC001" type="use-case" name="Wybiera grupę symboli" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creator="P90ab8b21616f43ca98d40a5db44d01d9" creation-date="05/09/2013 17:57:18">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t>UC Wybór grupy symboli</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="22" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                  <paragraph line-spacing="1">
+                    <p index="23">
+                      <t>// Gupa symboli czyli TFI, Akcje, Waluty</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="63" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                  <paragraph line-spacing="1">
+                    <p index="64">
+                      <t>// Symbole czyli PZU, KGHM, CDRED</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="97" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                  <paragraph line-spacing="1">
+                    <p index="98" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="99">
+                      <t>Atrybuty</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="107" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="108">
+                      <t>Główny aktor</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="120">
+                      <t> – Użytkownik </t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="134" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                  <paragraph line-spacing="1">
+                    <p index="135">
+                      <t>Priorytet</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="144">
+                      <t> – Wysoki </t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="154" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="155" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                  <paragraph line-spacing="1">
+                    <p index="156">
+                      <t>Główny scenariusz</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="173" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="174">
+                      <t>1. Użytkownik chce wybrac interesującą go grupę symboli</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="229" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="230" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="231">
+                      <t>2. Użytkownik wybiera intersującą go grupę w oknie głównym programu</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="298" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="299" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="300">
+                      <t>3. System pobiera listę symboli z wybranej przez użytkownika grupy i wyświetla w oknie głównym</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="394" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="395" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="396">
+                      <t>Rozszerzenia</t>
+                      <style font-name="Arial" font-size="8" font-bold="true" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="408" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                  <paragraph line-spacing="1">
+                    <p index="409">
+                      <t>2.A Grupy symboli  są niedostępne</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                    <p index="442" type="LineBreak">
+                      <t>
+</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                  <paragraph line-spacing="1">
+                    <p index="443">
+                      <t>2.A.1 Lista grup pozostaje pusta, użytkownik nie może wybrac grupy</t>
+                      <style font-name="Arial" font-size="8" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di354345710732519946" cid="GNR002" type="generalization" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 17:22:56">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
           <item id="di251530458682116466" iid="2f23aad80c69423aa94596fe9815b6a4" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="05/09/2013 17:56:52" order-index="0" type="entity">
@@ -2607,6 +3059,19 @@
             </layout>
             <relation from="di251530458682116466" from-iid="2f23aad80c69423aa94596fe9815b6a4" to="di802038182486700094" to-iid="1fc4efb4802747589ab08363e644302d" />
           </item>
+          <item id="di462991661497459594" iid="a68fb07da8d341bc92e2512094079ba7" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="05/09/2013 17:57:18" order-index="1" type="entity">
+            <layout ax="-20" ay="100" awidth="115" aheight="72" x="-20" y="100" width="105" height="114" angle="0" />
+            <use-case />
+          </item>
+          <item id="di354345710732519946" iid="da5300f6e7bd46f89031d4e658bed36a" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 17:22:56" order-index="12" type="relation">
+            <layout line-style="straight" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="67" y1="290" x2="49" y2="171" start-border-pos="0.0907413189227764" end-border-pos="0.640918657054072">
+              <points>
+                <point x="67" y="290" />
+                <point x="49" y="171" />
+              </points>
+            </layout>
+            <relation from="di251530458682116466" from-iid="2f23aad80c69423aa94596fe9815b6a4" to="di462991661497459594" to-iid="a68fb07da8d341bc92e2512094079ba7" />
+          </item>
         </layer>
       </diagram>
       <diagram type="requirements" id="p650299809420076785" name="View_RequiredArtifacts" order-index="2" show-nullability="false">
@@ -2622,7 +3087,7 @@
           </authors>
           <description />
           <creation-date>11/26/2013 18:46:08</creation-date>
-          <change-date>11/26/2013 21:34:45</change-date>
+          <change-date>11/27/2013 17:34:13</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
@@ -2647,6 +3112,22 @@
               <stereotype name="requirement" />
             </stereotypes>
             <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t>Main window</t>
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
             <associated-diagrams />
             <owned-items />
             <style class="default" />
@@ -2708,16 +3189,38 @@
               <end-role id="" name="" multiplicity="" navigability="" association-type="composition" visibility="private" />
             </relation>
           </item>
-          <item id="di578172356126386292" cid="C004" type="class" name="Quotes List" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/26/2013 18:48:08">
+          <item id="di578172356126386292" cid="C004" type="class" name="Symbols" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/26/2013 18:48:08">
             <stereotypes>
               <stereotype name="requirement" />
             </stereotypes>
             <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t>Symbol picker, eg. PZU, KGHM, CDRED</t>
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
             <associated-diagrams />
             <owned-items />
             <style class="default" />
             <attributes />
-            <operations />
+            <operations>
+              <operation id="o1dbf43521c37450bb71332115ea0cefb329" name="NewOperation1" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
             <template-parameters>
               <source-codes />
             </template-parameters>
@@ -3413,25 +3916,52 @@
               <end-role id="" name="" multiplicity="" navigability="" association-type="composition" visibility="private" />
             </relation>
           </item>
+          <item id="di493929682807320650" cid="C002" type="class" name="Symbol Groups" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 17:32:15">
+            <stereotypes>
+              <stereotype name="requirement" />
+            </stereotypes>
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t>Symbol group picker, eg. Founds, Stocks, Currencies</t>
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes />
+            <operations />
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di217641249319093902" cid="REL005" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 17:34:02">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di493929682807320650" to="di805913351633318545">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="" navigability="" association-type="composition" visibility="private" />
+            </relation>
+          </item>
         </abstract-items>
         <layer name="General View" visible="true" enabled="true" locked="false">
           <item id="di213203989985731508" iid="7ef7b9e619a54681ade0b9ebcfb8e6a5" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 18:46:48" order-index="0" type="entity">
             <layout ax="40" ay="40" awidth="700" aheight="50" x="40" y="40" width="700" height="50" angle="0" />
             <class />
-          </item>
-          <item id="di470673415601984412" iid="c023fdce9b4a4b4585604d7c999123fd" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 21:34:27" order-index="53" type="entity">
-            <layout ax="590" ay="350" awidth="190" aheight="30" x="590" y="350" width="190" height="30" angle="0" />
-            <class />
-          </item>
-          <item id="di116700608332474139" iid="df2bb218aac54a4fb9459f54fc0fce79" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 21:34:45" order-index="54" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="648" y1="350" x2="451" y2="270" start-border-pos="0.0764802631578947" end-border-pos="0.710358810424805">
-              <points>
-                <point x="648" y="350" />
-                <point x="451" y="270" />
-              </points>
-            </layout>
-            <relation from="di470673415601984412" from-iid="c023fdce9b4a4b4585604d7c999123fd" to="di266471934510765383" to-iid="f8b1307c1a3c4f719dd5e1b5534d788b" />
-            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
         </layer>
         <layer name="Others" visible="true" enabled="true" locked="false">
@@ -3449,6 +3979,9 @@
             <relation from="di762143300388505556" from-iid="e145f4a1050741f7b7101570e55fdd7e" to="di213203989985731508" to-iid="7ef7b9e619a54681ade0b9ebcfb8e6a5" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
+          <item id="di799355052195536429" iid="dcac43370d5a42fb9bba6e8407eb1d0a" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 17:32:35" order-index="56" type="entity">
+            <layout ax="180" ay="-15" awidth="80" aheight="40" x="0" y="0" width="0" height="0" angle="0" />
+          </item>
         </layer>
         <layer name="Main Window" visible="true" enabled="true" locked="false">
           <item id="di805913351633318545" iid="b01dfce0e7914f60b48a56a9c2585d11" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 18:47:00" order-index="1" type="entity">
@@ -3465,18 +3998,32 @@
             <relation from="di805913351633318545" from-iid="b01dfce0e7914f60b48a56a9c2585d11" to="di213203989985731508" to-iid="7ef7b9e619a54681ade0b9ebcfb8e6a5" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
+          <item id="di493929682807320650" iid="44fe58bb3c8d4a1683ac5b6feb717913" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 17:32:15" order-index="55" type="entity">
+            <layout ax="10" ay="330" awidth="140" aheight="30" x="10" y="330" width="140" height="30" angle="0" />
+            <class />
+          </item>
           <item id="di578172356126386292" iid="9b2db079e4724520ab514a7df63fe205" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 18:48:08" order-index="5" type="entity">
-            <layout ax="60" ay="330" awidth="160" aheight="30" x="60" y="330" width="160" height="30" angle="0" />
+            <layout ax="170" ay="330" awidth="100" aheight="30" x="170" y="330" width="100" height="30" angle="0" />
             <class />
           </item>
           <item id="di432443338521876748" iid="144b4b6920254e3e9df9804053ae874c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 18:48:47" order-index="6" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="140" y1="330" x2="140" y2="287" start-border-pos="0.125" end-border-pos="0.625">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="207" y1="330" x2="169" y2="287" start-border-pos="0.0927419281005859" end-border-pos="0.670698928833008">
               <points>
-                <point x="140" y="330" />
-                <point x="140" y="287" />
+                <point x="207" y="330" />
+                <point x="169" y="287" />
               </points>
             </layout>
             <relation from="di578172356126386292" from-iid="9b2db079e4724520ab514a7df63fe205" to="di805913351633318545" to-iid="b01dfce0e7914f60b48a56a9c2585d11" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+          <item id="di217641249319093902" iid="406faec3796d484c88416c41e9c28b9a" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 17:34:02" order-index="57" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="90" y1="330" x2="118" y2="287" start-border-pos="0.142281109946115" end-border-pos="0.590725803375244">
+              <points>
+                <point x="90" y="330" />
+                <point x="118" y="287" />
+              </points>
+            </layout>
+            <relation from="di493929682807320650" from-iid="44fe58bb3c8d4a1683ac5b6feb717913" to="di805913351633318545" to-iid="b01dfce0e7914f60b48a56a9c2585d11" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
         </layer>
@@ -3489,6 +4036,10 @@
             <layout ax="300" ay="220" awidth="180" aheight="50" x="300" y="220" width="180" height="50" angle="0" />
             <class />
           </item>
+          <item id="di470673415601984412" iid="c023fdce9b4a4b4585604d7c999123fd" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 21:34:27" order-index="53" type="entity">
+            <layout ax="590" ay="350" awidth="190" aheight="30" x="590" y="350" width="190" height="30" angle="0" />
+            <class />
+          </item>
           <item id="di263955077458164630" iid="16c1686b95914b0ba5ac712fa2eef026" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 19:40:00" order-index="48" type="relation">
             <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="650" y1="410" x2="510" y2="410" start-border-pos="0.875" end-border-pos="0.375">
               <points>
@@ -3497,6 +4048,16 @@
               </points>
             </layout>
             <relation from="di362023674423886594" from-iid="aee34d6ba2c24d51a909398ce2462901" to="di884085251780963159" to-iid="6dea89d726454975b9072d9e98356599" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+          <item id="di116700608332474139" iid="df2bb218aac54a4fb9459f54fc0fce79" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 21:34:45" order-index="54" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="648" y1="350" x2="451" y2="270" start-border-pos="0.0764802631578947" end-border-pos="0.710358810424805">
+              <points>
+                <point x="648" y="350" />
+                <point x="451" y="270" />
+              </points>
+            </layout>
+            <relation from="di470673415601984412" from-iid="c023fdce9b4a4b4585604d7c999123fd" to="di266471934510765383" to-iid="f8b1307c1a3c4f719dd5e1b5534d788b" />
             <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
           <item id="di825273247415970748" iid="32e9b6ba25724b8690e35ca3c34fc52f" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/26/2013 18:47:37" order-index="4" type="relation">
@@ -4587,8 +5148,23 @@
           </item>
         </layer>
       </diagram>
-      <diagram type="uml-usecase" id="p109071346281565811" name="UseCaseDiagram2" order-index="4" show-nullability="false">
-        <size width="21" height="29.7" unit="cm" type="Fixed" />
+    </model>
+    <model id="p583472650178477384" name="General Idea" type="" namespace="" order-index="2">
+      <meta>
+        <authors>
+          <author> </author>
+        </authors>
+        <description />
+        <creation-date>11/27/2013 19:00:47</creation-date>
+        <change-date>01/01/0001 00:00:00</change-date>
+        <revision-count>0</revision-count>
+        <version />
+      </meta>
+      <tagged-values />
+      <abstract-items />
+      <sub-models />
+      <diagram type="uml-activity" id="p108125415653354687" name="User Actions Sequence" order-index="1" show-nullability="false">
+        <size width="500" height="500" unit="px" type="Fixed" />
         <style>
           <background-color index="1" color="#FFFFFFFF" />
           <background-color index="2" color="#FFFFFFFF" />
@@ -4599,14 +5175,488 @@
             <author> </author>
           </authors>
           <description />
-          <creation-date>11/26/2013 19:50:18</creation-date>
-          <change-date>11/26/2013 19:50:41</change-date>
+          <creation-date>11/27/2013 19:01:06</creation-date>
+          <change-date>11/27/2013 19:24:17</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <tagged-values />
-        <abstract-items />
-        <layer name="Default" visible="true" enabled="true" locked="false" />
+        <abstract-items>
+          <item id="di411778940932182094" cid="ACT001" type="action" name="Main Window" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:01:29">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF2B95FF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-2,-2" shadow-size="6,6" shadow-visible="true" shadow-color="#50000000" shadow-radius="6" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Microsoft Sans Serif;10;B" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF1E1E1E" part-header-font="Microsoft Sans Serif;9;I" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Microsoft Sans Serif;10;" text-horizontal-alignment="left" text-vertical-alignment="center" tagged-value-color="#FF1E1E1E" tagged-value-font="Microsoft Sans Serif;9;I" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Microsoft Sans Serif;9;I" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+          </item>
+          <item id="di530094451123063177" cid="ACT001" type="action" name="Analysis Window" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:01:29">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FF2B95FF" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-2,-2" shadow-size="6,6" shadow-visible="true" shadow-color="#50000000" shadow-radius="6" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Microsoft Sans Serif;10;B" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF1E1E1E" part-header-font="Microsoft Sans Serif;9;I" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Microsoft Sans Serif;10;" text-horizontal-alignment="left" text-vertical-alignment="center" tagged-value-color="#FF1E1E1E" tagged-value-font="Microsoft Sans Serif;9;I" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Microsoft Sans Serif;9;I" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+          </item>
+          <item id="di599531024821348994" cid="ACT002" type="action" name="Quotes Center" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:02:22">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FFFF2B2B" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-2,-2" shadow-size="6,6" shadow-visible="true" shadow-color="#50000000" shadow-radius="6" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Microsoft Sans Serif;10;B" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF1E1E1E" part-header-font="Microsoft Sans Serif;9;I" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Microsoft Sans Serif;10;" text-horizontal-alignment="left" text-vertical-alignment="center" tagged-value-color="#FF1E1E1E" tagged-value-font="Microsoft Sans Serif;9;I" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Microsoft Sans Serif;9;I" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+          </item>
+          <item id="di216727477413823829" cid="ACT002" type="action" name="Analysis Center" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:02:22">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style background-type="vertical-linear" background-color="#FFFF2B2B" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-2,-2" shadow-size="6,6" shadow-visible="true" shadow-color="#50000000" shadow-radius="6" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Microsoft Sans Serif;10;B" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF1E1E1E" part-header-font="Microsoft Sans Serif;9;I" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Microsoft Sans Serif;10;" text-horizontal-alignment="left" text-vertical-alignment="center" tagged-value-color="#FF1E1E1E" tagged-value-font="Microsoft Sans Serif;9;I" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Microsoft Sans Serif;9;I" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
+          </item>
+          <item id="di166538791988237525" cid="ELEM001" type="control-flow" name="so - let's get quotes data from..." style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:02:57">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di222115511298722044" cid="ELEM001" type="object-flow" name="analize quotes data in..." style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:03:01">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <object-flow guard="" />
+          </item>
+          <item id="di822521683516657938" cid="ELEM002" type="control-flow" name="and show the analysis result in..." style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:03:04">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di391170700127838278" cid="ACT003" type="action" name="Quotes Source" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:03:55">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di677990407635186745" cid="ELEM003" type="control-flow" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:04:04">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di395340216258928809" cid="ACT003" type="action" name="Default Analysis Config" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:03:55">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di758447842853943703" cid="ELEM004" type="control-flow" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:04:37">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+          <item id="di693038948508911798" cid="IN001" type="initial-node" name="InitialNode1" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:07:55">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
+          <item id="di338291132206847299" cid="ELEM005" type="control-flow" name="user double clicks a symbol in..." style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:08:01">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <control-flow guard="" />
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di411778940932182094" iid="fac064908c1448cca15b4a57cd54d87c" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:01:29" order-index="0" type="entity">
+            <layout ax="200" ay="80" awidth="170" aheight="70" x="200" y="80" width="170" height="70" angle="0" />
+          </item>
+          <item id="di530094451123063177" iid="6765800fb8344e33b3d474d7e06cb942" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:01:29" order-index="0" type="entity">
+            <layout ax="560" ay="80" awidth="170" aheight="70" x="560" y="80" width="170" height="70" angle="0" />
+          </item>
+          <item id="di599531024821348994" iid="7224615c62b040e288068d593c00bcb7" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:02:22" order-index="1" type="entity">
+            <layout ax="280" ay="250" awidth="130" aheight="70" x="280" y="250" width="130" height="70" angle="0" />
+          </item>
+          <item id="di216727477413823829" iid="f85d47f788cb47c1892933975aff177e" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:02:22" order-index="1" type="entity">
+            <layout ax="530" ay="250" awidth="130" aheight="70" x="530" y="250" width="130" height="70" angle="0" />
+          </item>
+          <item id="di166538791988237525" iid="10e02c960e6942249e29f52411b425fa" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:02:57" order-index="2" type="relation">
+            <layout line-style="straight" lock-start-point="false" lock-end-point="false" name-position="30,10" x1="297" y1="150" x2="333" y2="250" start-border-pos="0.643166082045611" end-border-pos="0.101244354248047">
+              <points>
+                <point x="297" y="150" />
+                <point x="333" y="250" />
+              </points>
+            </layout>
+            <relation from="di411778940932182094" from-iid="fac064908c1448cca15b4a57cd54d87c" to="di599531024821348994" to-iid="7224615c62b040e288068d593c00bcb7" />
+          </item>
+          <item id="di222115511298722044" iid="87b51675b99a4aad9f519f6a965f58f0" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:03:01" order-index="3" type="relation">
+            <layout line-style="straight" lock-start-point="false" lock-end-point="false" name-position="0,-10" x1="410" y1="285" x2="530" y2="285" start-border-pos="0.375" end-border-pos="0.875">
+              <points>
+                <point x="410" y="285" />
+                <point x="530" y="285" />
+              </points>
+            </layout>
+            <relation from="di599531024821348994" from-iid="7224615c62b040e288068d593c00bcb7" to="di216727477413823829" to-iid="f85d47f788cb47c1892933975aff177e" />
+          </item>
+          <item id="di822521683516657938" iid="a0b7d60395474f678fe3871903478e03" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:03:04" order-index="4" type="relation">
+            <layout line-style="straight" lock-start-point="false" lock-end-point="false" name-position="-20,10" x1="605" y1="250" x2="635" y2="150" start-border-pos="0.144796400803786" end-border-pos="0.609861575855928">
+              <points>
+                <point x="605" y="250" />
+                <point x="635" y="150" />
+              </points>
+            </layout>
+            <relation from="di216727477413823829" from-iid="f85d47f788cb47c1892933975aff177e" to="di530094451123063177" to-iid="6765800fb8344e33b3d474d7e06cb942" />
+          </item>
+          <item id="di391170700127838278" iid="ff38ee0fcd2e4ac5b5ce0f5dcf8ef588" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:03:55" order-index="5" type="entity">
+            <layout ax="290" ay="370" awidth="110" aheight="50" x="290" y="370" width="110" height="50" angle="0" />
+          </item>
+          <item id="di677990407635186745" iid="7a98c68ef27b496481a9f0137fbb8608" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:04:04" order-index="6" type="relation">
+            <layout line-style="straight" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="345" y1="370" x2="345" y2="320" start-border-pos="0.125" end-border-pos="0.625">
+              <points>
+                <point x="345" y="370" />
+                <point x="345" y="320" />
+              </points>
+            </layout>
+            <relation from="di391170700127838278" from-iid="ff38ee0fcd2e4ac5b5ce0f5dcf8ef588" to="di599531024821348994" to-iid="7224615c62b040e288068d593c00bcb7" />
+          </item>
+          <item id="di395340216258928809" iid="cc3e1cf2c2354395aff9cd0d9b207b1d" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:03:55" order-index="5" type="entity">
+            <layout ax="540" ay="370" awidth="110" aheight="50" x="540" y="370" width="110" height="50" angle="0" />
+          </item>
+          <item id="di758447842853943703" iid="d310f13cc20a4a44969fe21b0f91e217" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:04:37" order-index="7" type="relation">
+            <layout line-style="straight" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="595" y1="370" x2="595" y2="320" start-border-pos="0.125" end-border-pos="0.625">
+              <points>
+                <point x="595" y="370" />
+                <point x="595" y="320" />
+              </points>
+            </layout>
+            <relation from="di395340216258928809" from-iid="cc3e1cf2c2354395aff9cd0d9b207b1d" to="di216727477413823829" to-iid="f85d47f788cb47c1892933975aff177e" />
+          </item>
+          <item id="di693038948508911798" iid="b39d24177d9045798e9371608b40ea7f" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:07:55" order-index="8" type="entity">
+            <layout ax="20" ay="20" awidth="20" aheight="20" x="20" y="20" width="20" height="20" angle="0" name-position="30,-10" />
+          </item>
+          <item id="di338291132206847299" iid="58d76f21e2e74258a9465a502fa94e32" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:08:01" order-index="9" type="relation">
+            <layout line-style="straight" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="40" y1="33" x2="200" y2="87" start-border-pos="0.416666650772095" end-border-pos="0.773809514726911">
+              <points>
+                <point x="40" y="33" />
+                <point x="200" y="87" />
+              </points>
+            </layout>
+            <relation from="di693038948508911798" from-iid="b39d24177d9045798e9371608b40ea7f" to="di411778940932182094" to-iid="fac064908c1448cca15b4a57cd54d87c" />
+          </item>
+        </layer>
+      </diagram>
+      <diagram type="uml-object" id="p270224678371132883" name="Implementation scratch" order-index="2" show-nullability="false">
+        <size width="500" height="500" unit="px" type="Fixed" />
+        <style>
+          <background-color index="1" color="#FFFFFFFF" />
+          <background-color index="2" color="#FFFFFFFF" />
+          <background-type type="solid" />
+        </style>
+        <meta>
+          <authors>
+            <author> </author>
+          </authors>
+          <description />
+          <creation-date>11/27/2013 19:52:31</creation-date>
+          <change-date>11/27/2013 19:59:24</change-date>
+          <revision-count>0</revision-count>
+          <version />
+        </meta>
+        <tagged-values />
+        <abstract-items>
+          <item id="di135088237824783787" cid="C005" type="class" name="Main Controller" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:52:45">
+            <stereotypes />
+            <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes>
+              <attribute id="a67dc2fa9e7c64807a185c6875c2e4ce4214" name="Analysis Factory" type="" type-id="" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+              </attribute>
+              <attribute id="a8750f722f2314f53a4b3da738835826f274" name="Main User Interface" type="" type-id="" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+              </attribute>
+              <attribute id="a8a5d61e457a14dd7a5ce0d5095b7c26b475" name="Data Center" type="" type-id="" visibility="private" abstract="false" virtual="false">
+                <stereotypes />
+                <documentation>
+                  <text>
+                    <content>
+                      <paragraph line-spacing="1">
+                        <p index="0">
+                          <t />
+                          <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                            <text>
+                              <solid-brush color="#FF000000" />
+                            </text>
+                          </style>
+                        </p>
+                      </paragraph>
+                    </content>
+                  </text>
+                </documentation>
+              </attribute>
+            </attributes>
+            <operations>
+              <operation id="oe02b994a57ee4d90bfefa63440a8bc08657" name="run" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
+            </template-parameters>
+          </item>
+          <item id="di456234200146440752" cid="C006" type="class" name="main" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:54:35">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <attributes />
+            <operations>
+              <operation id="o9c84bac44d1d41a3b9545704d1e0e75b985" name="int main" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+                <parameters />
+                <stereotypes />
+                <source-codes />
+              </operation>
+            </operations>
+            <template-parameters>
+              <source-codes />
+            </template-parameters>
+          </item>
+          <item id="di166831095635083000" cid="REL020" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/27/2013 19:59:14">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <relation from="di456234200146440752" to="di135088237824783787">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+            </relation>
+          </item>
+        </abstract-items>
+        <layer name="Default" visible="true" enabled="true" locked="false">
+          <item id="di135088237824783787" iid="66025712a5b34e0796605d766e582947" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:52:45" order-index="0" type="entity">
+            <layout ax="450" ay="170" awidth="220" aheight="100" x="450" y="170" width="220" height="100" angle="0" />
+            <class />
+          </item>
+          <item id="di456234200146440752" iid="6ea023e346e14630be2e39c7d934ba16" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:54:35" order-index="1" type="entity">
+            <layout ax="60" ay="170" awidth="280" aheight="100" x="60" y="170" width="280" height="100" angle="0" />
+            <class />
+          </item>
+          <item id="di261315522868804509" iid="612fbc19046c4d26b7adadea07f09376" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:55:04" order-index="2" type="entity">
+            <layout ax="80" ay="290" awidth="370" aheight="140" x="80" y="290" width="370" height="140" angle="0" />
+          </item>
+          <item id="di137854952570771548" iid="a6cbc13d26f9443a990e93fb92204bde" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:55:04" order-index="3" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="232" y1="290" x2="223" y2="270" start-border-pos="0.103040540540541" end-border-pos="0.645727034977504">
+              <points>
+                <point x="232" y="290" />
+                <point x="223" y="270" />
+              </points>
+            </layout>
+            <relation from="di261315522868804509" from-iid="612fbc19046c4d26b7adadea07f09376" to="di456234200146440752" to-iid="6ea023e346e14630be2e39c7d934ba16" />
+          </item>
+          <item id="di166831095635083000" iid="ac44465b15c44e1588818dd9b5834a5b" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/27/2013 19:59:14" order-index="4" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="340" y1="220" x2="450" y2="220" start-border-pos="0.375" end-border-pos="0.875">
+              <points>
+                <point x="340" y="220" />
+                <point x="450" y="220" />
+              </points>
+            </layout>
+            <relation from="di456234200146440752" from-iid="6ea023e346e14630be2e39c7d934ba16" to="di135088237824783787" to-iid="66025712a5b34e0796605d766e582947" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
+          </item>
+        </layer>
       </diagram>
     </model>
   </models>

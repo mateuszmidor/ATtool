@@ -30,6 +30,7 @@
     <custom-types>
       <type id="map&lt;name, DataSeries&gt;" name="map&lt;name, DataSeries&gt;" description="" />
       <type id="DataSeriesEntry" name="DataSeriesEntry" description="" />
+      <type id="Class:di534600424528661918" name="AnalysisResult" description="" class-ref="di534600424528661918" />
     </custom-types>
   </types>
   <filters />
@@ -6867,21 +6868,41 @@
           </authors>
           <description />
           <creation-date>11/29/2013 17:22:37</creation-date>
-          <change-date>11/29/2013 22:51:44</change-date>
+          <change-date>11/29/2013 23:00:54</change-date>
           <revision-count>0</revision-count>
           <version />
         </meta>
         <tagged-values />
         <abstract-items>
-          <item id="di375148865495630395" cid="C020" type="class" name="AnalysisCenter" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/29/2013 17:22:49">
+          <item id="di375148865495630395" cid="C020" type="class" name="AnalysisCenter" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/29/2013 17:22:49">
             <stereotypes />
             <tagged-values />
+            <documentation>
+              <text>
+                <content>
+                  <paragraph line-spacing="1">
+                    <p index="0">
+                      <t />
+                      <style font-name="Arial" font-size="12" font-bold="false" font-italic="false" font-underline="false" font-strikeout="false">
+                        <text>
+                          <solid-brush color="#FF000000" />
+                        </text>
+                      </style>
+                    </p>
+                  </paragraph>
+                </content>
+              </text>
+            </documentation>
+            <cooperation>
+              <participants />
+              <comments />
+            </cooperation>
             <associated-diagrams />
             <owned-items />
-            <style class="default" />
+            <style background-type="vertical-linear" background-color="#FFFF0000" background-color2="#FFFFFFFF" border-color="#FF000000" border-width="1" shadow-type="smooth" shadow-offset="-2,-2" shadow-size="6,6" shadow-visible="true" shadow-color="#50000000" shadow-radius="6" gloss-effect="true" threed-gloss-effect="false" wrap-name-text="true" wrap-other-text="true" text-wrapping-threshold="0" padding="0" name-color="#FF000000" name-font="Microsoft Sans Serif;10;B" name-horizontal-alignment="center" name-vertical-alignment="center" part-header-color="#FF1E1E1E" part-header-font="Microsoft Sans Serif;9;I" part-header-horizontal-alignment="center" part-header-vertical-alignment="center" text-color="#FF000000" text-font="Microsoft Sans Serif;10;" text-horizontal-alignment="left" text-vertical-alignment="center" tagged-value-color="#FF1E1E1E" tagged-value-font="Microsoft Sans Serif;9;I" tagged-value-horizontal-alignment="center" tagged-value-vertical-alignment="center" stereotype-color="#FF1E1E1E" stereotype-font="Microsoft Sans Serif;9;I" stereotype-horizontal-alignment="center" stereotype-vertical-alignment="center" />
             <attributes />
             <operations>
-              <operation id="o630c95d39b8b4791af020cf765577968950" name="analyzeData" type="" type-id="" visibility="public" abstract="false" virtual="false" static="false">
+              <operation id="o630c95d39b8b4791af020cf765577968950" name="analyzeData" type="AnalysisResult" type-id="Class:di534600424528661918" visibility="public" abstract="false" virtual="false" static="false">
                 <parameters>
                   <parameter id="" name="data" type="" type-id="" default-value="" />
                   <parameter id="" name="settings" type="" type-id="" default-value="" />
@@ -6891,7 +6912,9 @@
               </operation>
             </operations>
             <template-parameters>
-              <source-codes />
+              <source-codes>
+                <source-code language="ActionScript" />
+              </source-codes>
             </template-parameters>
           </item>
           <item id="di656356521498175270" cid="C021" type="class" name="AnalysisSettings" style-class="default" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/29/2013 17:23:17">
@@ -6981,14 +7004,16 @@
               <source-codes />
             </template-parameters>
           </item>
-          <item id="di769337950672665485" cid="DEP001" type="dependency" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/29/2013 22:46:42">
-            <stereotypes>
-              <stereotype name="use" />
-            </stereotypes>
+          <item id="di582970492496975353" cid="REL003" type="relationship" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/29/2013 23:00:54">
+            <stereotypes />
             <tagged-values />
             <associated-diagrams />
             <owned-items />
             <style class="default" />
+            <relation from="di914954959867222339" to="di534600424528661918">
+              <start-role id="" name="" multiplicity="" navigability="" association-type="association" visibility="private" />
+              <end-role id="" name="" multiplicity="" navigability="" association-type="aggregation" visibility="private" />
+            </relation>
           </item>
           <item id="di497463828966203978" cid="C002" type="class" name="DataSeriesEntry" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/29/2013 22:47:50">
             <stereotypes />
@@ -7059,10 +7084,26 @@ sma2 = provideSma(data, timeSpan, quotesDensity, wantSma2)</comment>
             <owned-items />
             <style class="default" />
           </item>
+          <item id="di287239984284027642" cid="CMT002" type="comment" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/29/2013 22:59:17">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+            <comment>flexible way for returning results:
+return results as &lt;name,dataseries&gt; pairs</comment>
+          </item>
+          <item id="di299769310708068568" cid="CN002" type="comment-connector" name="" style-class="" is-abstract="false" is-root="false" is-leaf="false" is-active="false" creation-date="11/29/2013 23:00:05">
+            <stereotypes />
+            <tagged-values />
+            <associated-diagrams />
+            <owned-items />
+            <style class="default" />
+          </item>
         </abstract-items>
         <layer name="Default" visible="true" enabled="true" locked="false">
           <item id="di375148865495630395" iid="ddb1f52b91f9404f9e7d43de76620b98" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 17:22:49" order-index="0" type="entity">
-            <layout ax="20" ay="350" awidth="280" aheight="110" x="20" y="350" width="280" height="110" angle="0" />
+            <layout ax="20" ay="350" awidth="290" aheight="110" x="20" y="350" width="290" height="110" angle="0" />
             <class />
           </item>
           <item id="di656356521498175270" iid="1f2fb466fa0647109aadd80eedb16bb9" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 17:23:17" order-index="1" type="entity">
@@ -7070,49 +7111,40 @@ sma2 = provideSma(data, timeSpan, quotesDensity, wantSma2)</comment>
             <class />
           </item>
           <item id="di840051096566204327" iid="4a9e0608897547eea46cae70107a6525" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 17:23:26" order-index="2" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="-10,-10" x1="300" y1="405" x2="440" y2="405" start-border-pos="0.375" end-border-pos="0.875">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="-10,-10" x1="310" y1="405" x2="440" y2="405" start-border-pos="0.375" end-border-pos="0.875">
               <points>
-                <point x="300" y="405" />
+                <point x="310" y="405" />
                 <point x="440" y="405" />
               </points>
             </layout>
             <relation from="di375148865495630395" from-iid="ddb1f52b91f9404f9e7d43de76620b98" to="di656356521498175270" to-iid="1f2fb466fa0647109aadd80eedb16bb9" />
           </item>
           <item id="di534600424528661918" iid="4369ce38773441f9957de9cbccbac787" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 17:24:48" order-index="3" type="entity">
-            <layout ax="20" ay="20" awidth="280" aheight="90" x="20" y="20" width="280" height="90" angle="0" />
+            <layout ax="20" ay="170" awidth="290" aheight="90" x="20" y="170" width="290" height="90" angle="0" />
             <class />
           </item>
           <item id="di283942412331935204" iid="9fd5e8c62b354bf0b69ecc019f2eff82" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 17:28:59" order-index="4" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="160" y1="350" x2="160" y2="110" start-border-pos="0.125" end-border-pos="0.625">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="165" y1="350" x2="165" y2="260" start-border-pos="0.125" end-border-pos="0.625">
               <points>
-                <point x="160" y="350" />
-                <point x="160" y="110" />
+                <point x="165" y="350" />
+                <point x="165" y="260" />
               </points>
             </layout>
             <relation from="di375148865495630395" from-iid="ddb1f52b91f9404f9e7d43de76620b98" to="di534600424528661918" to-iid="4369ce38773441f9957de9cbccbac787" />
           </item>
           <item id="di914954959867222339" iid="370b68b73f0c4b1da6b13d1795768e80" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 22:46:27" order-index="5" type="entity">
-            <layout ax="440" ay="20" awidth="220" aheight="90" x="440" y="20" width="220" height="90" angle="0" />
+            <layout ax="50" ay="10" awidth="230" aheight="90" x="50" y="10" width="230" height="90" angle="0" />
             <class />
           </item>
-          <item id="di769337950672665485" iid="7cde34c386454b71ba6c2561ca46964e" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 22:46:42" order-index="6" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="300" y1="65" x2="440" y2="65" start-border-pos="0.375" end-border-pos="0.875">
-              <points>
-                <point x="300" y="65" />
-                <point x="440" y="65" />
-              </points>
-            </layout>
-            <relation from="di534600424528661918" from-iid="4369ce38773441f9957de9cbccbac787" to="di914954959867222339" to-iid="370b68b73f0c4b1da6b13d1795768e80" />
-          </item>
           <item id="di497463828966203978" iid="7548a576088f4b00853b97a0d4647bcf" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 22:47:50" order-index="7" type="entity">
-            <layout ax="480" ay="160" awidth="140" aheight="70" x="480" y="160" width="140" height="70" angle="0" />
+            <layout ax="440" ay="20" awidth="140" aheight="70" x="440" y="20" width="140" height="70" angle="0" />
             <class />
           </item>
           <item id="di838882006162346694" iid="a8387064708747d9b6db60ad7900abd0" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 22:48:25" order-index="8" type="relation">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="550" y1="160" x2="550" y2="110" start-border-pos="0.125" end-border-pos="0.625">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="440" y1="55" x2="280" y2="55" start-border-pos="0.875" end-border-pos="0.375">
               <points>
-                <point x="550" y="160" />
-                <point x="550" y="110" />
+                <point x="440" y="55" />
+                <point x="280" y="55" />
               </points>
             </layout>
             <relation from="di497463828966203978" from-iid="7548a576088f4b00853b97a0d4647bcf" to="di914954959867222339" to-iid="370b68b73f0c4b1da6b13d1795768e80" />
@@ -7122,13 +7154,35 @@ sma2 = provideSma(data, timeSpan, quotesDensity, wantSma2)</comment>
             <layout ax="40" ay="500" awidth="550" aheight="80" x="40" y="500" width="550" height="80" angle="0" />
           </item>
           <item id="di137405633102752725" iid="2289d2d7741c4a978961ac8d5a0820e3" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 22:51:44" order-index="10" type="comment-connector">
-            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="269" y1="500" x2="223" y2="460" start-border-pos="0.104124575528232" end-border-pos="0.681382274627686">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="271" y1="500" x2="226" y2="460" start-border-pos="0.104797973632813" end-border-pos="0.677681995260304">
               <points>
-                <point x="269" y="500" />
-                <point x="223" y="460" />
+                <point x="271" y="500" />
+                <point x="226" y="460" />
               </points>
             </layout>
             <relation from="di899622743537824049" from-iid="a675f0bce1f34c05a32442ee8311d483" to="di375148865495630395" to-iid="ddb1f52b91f9404f9e7d43de76620b98" />
+          </item>
+          <item id="di287239984284027642" iid="96cd580b770147a28b5062be0002dfdd" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 22:59:17" order-index="11" type="entity">
+            <layout ax="400" ay="170" awidth="280" aheight="60" x="400" y="170" width="280" height="60" angle="0" />
+          </item>
+          <item id="di299769310708068568" iid="d7552b8684c34206b57646eb248976ee" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 23:00:05" order-index="12" type="comment-connector">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="400" y1="206" x2="310" y2="209" start-border-pos="0.898333358764648" end-border-pos="0.358888880411784">
+              <points>
+                <point x="400" y="206" />
+                <point x="310" y="209" />
+              </points>
+            </layout>
+            <relation from="di287239984284027642" from-iid="96cd580b770147a28b5062be0002dfdd" to="di534600424528661918" to-iid="4369ce38773441f9957de9cbccbac787" />
+          </item>
+          <item id="di582970492496975353" iid="c0325890583b4e4fa7161045cdcaf459" show-cid="false" show-parent-name="false" show-stereotypes="true" show-tagged-values="false" creation-date="11/29/2013 23:00:54" order-index="13" type="relation">
+            <layout line-style="oblique" lock-start-point="false" lock-end-point="false" name-position="10,-10" x1="165" y1="100" x2="165" y2="170" start-border-pos="0.625" end-border-pos="0.125">
+              <points>
+                <point x="165" y="100" />
+                <point x="165" y="170" />
+              </points>
+            </layout>
+            <relation from="di914954959867222339" from-iid="370b68b73f0c4b1da6b13d1795768e80" to="di534600424528661918" to-iid="4369ce38773441f9957de9cbccbac787" />
+            <role-positions start-role="25,15" end-role="25,-15" start-multiplicity="25,-15" end-multiplicity="25,15" />
           </item>
         </layer>
       </diagram>

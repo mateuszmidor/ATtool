@@ -43,6 +43,26 @@
 	<build>
 		<plugins>
 
+			<!-- Generuj javadoc -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+					<outputDirectory>${project.build.directory}/javadoc</outputDirectory>
+					<reportOutputDirectory>${project.reporting.outputDirectory}/javadoc</reportOutputDirectory>
+				</configuration>
+				<executions>
+					<execution>
+						<id>attach-javadocs</id>
+						<phase>site</phase>
+						<goals>
+							<goal>aggregate</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+
 			<!-- Używaj Java 7 -->
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -82,7 +102,7 @@
 
 						<!-- Nie licz pokrycia kodu dla tych plików -->
 						<excludes>
-						<!-- <exclude>com/mateuszmidor/App.class</exclude> -->
+							<!-- <exclude>com/mateuszmidor/App.class</exclude> -->
 						</excludes>
 					</instrumentation>
 
@@ -116,7 +136,7 @@
 						<param>com.mateuszmidor*</param>
 					</targetTests>
 					<excludedClasses>
-					<!-- <param>com.mateuszmidor.App</param> -->
+						<!-- <param>com.mateuszmidor.App</param> -->
 					</excludedClasses>
 					<outputFormats>
 						<outputFormat>XML</outputFormat>
@@ -128,14 +148,25 @@
 
 	</build>
 
-	<!-- Dołącz raport Cobertury do raportu projektu -->
-	<!-- mvn site -->
+
 	<reporting>
 		<plugins>
+			<!-- Dołącz raport Cobertury do raportu projektu -->
+			<!-- mvn site -->
 			<plugin>
 				<groupId>org.codehaus.mojo</groupId>
 				<artifactId>cobertura-maven-plugin</artifactId>
 				<version>2.6</version>
+			</plugin>
+
+			<!-- Dołącz raport javadoc do raportu projektu -->
+			<!-- mvn site -->
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>2.9.1</version>
+				<configuration>
+				</configuration>
 			</plugin>
 		</plugins>
 	</reporting>

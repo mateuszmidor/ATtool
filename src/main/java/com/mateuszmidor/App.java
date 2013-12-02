@@ -4,8 +4,8 @@ import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
 /**
- * Hello world!
- *
+ * Application root class with main() func, here all the fun begins!
+ * @author Mateusz Midor (kontakt@mateuszmidor.com)
  */
 public class App 
 {

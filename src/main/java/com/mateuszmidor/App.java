@@ -5,13 +5,12 @@ import org.slf4j.LoggerFactory;
 
 /**
  * Application root class with main() func, here all the fun begins!
- * @author Mateusz Midor 
+ * 
+ * @author Mateusz Midor
  */
-public class App 
-{
+public class App {
 	private static final Logger LOGGER = LoggerFactory.getLogger(App.class);
-    public static void main( String[] args )
-    {
-       	LOGGER.debug( "Hello World!" );
-    }
+	public static void main(String[] args) {
+		LOGGER.debug("Hello World!");
+	}
 }

@@ -9,8 +9,8 @@
 	<url>http://maven.apache.org</url>
 	<developers>
 		<developer>
-		<name>MateuszMidor</name>
-		<email>kontakt@mateuszmidor.com</email>
+			<name>MateuszMidor</name>
+			<email>kontakt@mateuszmidor.com</email>
 		</developer>
 	</developers>
 	<dependencies>
@@ -107,7 +107,7 @@
 
 						<!-- Nie licz pokrycia kodu dla tych plików -->
 						<excludes>
-							<!-- <exclude>com/mateuszmidor/App.class</exclude> -->
+							<exclude>com/mateuszmidor/App.class</exclude>
 						</excludes>
 					</instrumentation>
 
@@ -141,7 +141,7 @@
 						<param>com.mateuszmidor*</param>
 					</targetTests>
 					<excludedClasses>
-						<!-- <param>com.mateuszmidor.App</param> -->
+						<param>com.mateuszmidor.App</param>
 					</excludedClasses>
 					<outputFormats>
 						<outputFormat>XML</outputFormat>

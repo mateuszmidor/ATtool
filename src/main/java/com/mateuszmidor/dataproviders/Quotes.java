@@ -15,12 +15,18 @@ import java.util.List;
  */
 public class Quotes implements Iterable<QuotesEntry> {
 
+	public static final Quotes EMPTY_QUOTES = new Quotes("[EMPTY]", "[empty]");
 	private final List<QuotesEntry> data = new ArrayList<QuotesEntry>();
 	private final String symbolName;
 	private final String fullName;
 
+	/**
+	 * 
+	 * Constructor enforces symbol-always-uppercase policy
+	 * 
+	 */
 	public Quotes(String symbolName, String fullName) {
-		this.symbolName = symbolName;
+		this.symbolName = symbolName.toUpperCase();
 		this.fullName = fullName;
 	}
 

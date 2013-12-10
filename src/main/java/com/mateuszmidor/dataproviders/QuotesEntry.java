@@ -16,6 +16,8 @@ public class QuotesEntry {
 	public double volume;
 	public Date date;
 	
+	// can be used to mark the end of entries while fetching from a stream
+	public static final QuotesEntry EMPTY_ENTRY = new QuotesEntry();
 	public QuotesEntry() {
 	}
 	

@@ -22,7 +22,7 @@ import com.mateuszmidor.dataproviders.SymbolToNameMap;
 public class BossaListParser {
 	private BossaListParser() {
 	}
-	
+
 	public static SymbolToNameMap parse(InputStream is)
 			throws DataProviderException {
 
@@ -34,16 +34,14 @@ public class BossaListParser {
 
 		// prepare buffer for symbol-name pairs
 		SymbolToNameMap map = new SymbolToNameMap();
-		SymbolNamePair entry;
 
 		// fetch symbol-name pairs and put them into map
-		while ((entry = getEntry(br)) != SymbolNamePair.EMPTY_ENTRY) {
-			map.put(entry.getSymbol(), entry.getName());
+		for (SymbolNamePair e = getEntry(br); e != SymbolNamePair.EMPTY_ENTRY; e = getEntry(br)) {
+			map.put(e.getSymbol(), e.getName());
 		}
 
 		return map;
 	}
-
 	private static SymbolNamePair getEntry(BufferedReader br)
 			throws DataProviderException {
 
@@ -56,12 +54,14 @@ public class BossaListParser {
 					e);
 		}
 
-		if (null == line)
+		if (null == line) {
 			return SymbolNamePair.EMPTY_ENTRY;
+		}
 
 		// the summary at the end of the file starts with -------------
-		if (line.startsWith("---"))
+		if (line.startsWith("---")) {
 			return SymbolNamePair.EMPTY_ENTRY;
+		}
 
 		return parseEntry(line);
 	}
@@ -117,13 +117,11 @@ public class BossaListParser {
 		try {
 			br.readLine();
 			br.readLine();
-			if (null == br.readLine()) {
-				throw new DataProviderException(
-						"Invalid header in bossa.pl symbol list file");
-			}
+			br.readLine();
 		} catch (IOException e) {
 			throw new DataProviderException(
-					"Error during skipping header in bossa.pl symbol list file", e);
+					"Error during skipping header in bossa.pl symbol list file",
+					e);
 		}
 	}
 

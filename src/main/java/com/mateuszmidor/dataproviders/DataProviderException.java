@@ -9,4 +9,17 @@ import com.mateuszmidor.ATtoolException;
  */
 public class DataProviderException extends ATtoolException {
 	private static final long serialVersionUID = 1L;
+	
+	
+	public DataProviderException(String message) {
+		super(message);
+	}
+	
+	public DataProviderException(Throwable cause) {
+		super(cause);
+	}
+	
+	public DataProviderException(String message, Throwable cause) {
+		super(message, cause);
+	}
 }

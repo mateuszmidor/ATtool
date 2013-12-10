@@ -1,8 +1,8 @@
 package com.mateuszmidor.dataproviders;
 
 /**
- * Class representing symbol-name pair, eg. EUR-EURO. Enforces "symbol is always
- * uppercase" policy
+ * Class representing symbol-name pair, eg. EUR-Euro. Enforces
+ * "symbol-always-uppercase" policy
  * 
  * @author Mateusz Midor
  * 

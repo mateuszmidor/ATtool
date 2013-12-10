@@ -41,7 +41,7 @@
 		<dependency>
 			<groupId>com.google.guava</groupId>
 			<artifactId>guava</artifactId>
-			<version>r09</version>
+			<version>14.0</version>
 		</dependency>
 	</dependencies>
 
@@ -147,6 +147,7 @@
 						<outputFormat>XML</outputFormat>
 						<outputFormat>HTML</outputFormat>
 					</outputFormats>
+					<detectInlinedCode>true</detectInlinedCode>
 				</configuration>
 			</plugin>
 		</plugins>

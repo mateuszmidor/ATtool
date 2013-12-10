@@ -1,5 +1,6 @@
 package com.mateuszmidor.dataproviders;
 
+
 /**
  * Base class for various sources of quotes data providers
  * 
@@ -13,10 +14,10 @@ public abstract class DataProvider {
 	// below three functions to be implemented in derived classes
 	abstract public String getGroupName();
 	
-	abstract protected Quotes getDataForSymbol(String symbol)
+	abstract protected Quotes fetchQuotesForSymbol(String symbol)
 			throws DataProviderException;
 	
-	abstract protected SymbolToNameMap loadSymbolsToNamesMap()
+	abstract protected SymbolToNameMap fetchSymbolToNameMap()
 			throws DataProviderException;
 
 	
@@ -25,7 +26,7 @@ public abstract class DataProvider {
 		
 		// lazy initialization
 		if (symbolToNameMap.isEmpty()) {
-			symbolToNameMap = loadSymbolsToNamesMap();
+			symbolToNameMap = fetchSymbolToNameMap();
 		}
 
 		return symbolToNameMap;
@@ -41,8 +42,7 @@ public abstract class DataProvider {
 	public Quotes getQuotesForSymbol(String symbol)
 			throws DataProviderException {
 		
-		Quotes data = getDataForSymbol(symbol);
-		data.sortAscending();
+		Quotes data = fetchQuotesForSymbol(symbol);
 		return data;
 	}
 
@@ -52,7 +52,7 @@ public abstract class DataProvider {
 		return getSymbolToNameMap().get(symbol);
 	}
 
-	public Symbols getSymbolList() throws DataProviderException {
+	public Symbols getAvailableSymbols() throws DataProviderException {
 		
 		Symbols symbols = new Symbols();
 		symbols.addAll(getSymbolToNameMap().keySet());

@@ -13,7 +13,8 @@ public class QuotesTest {
 	// Creates Date objects in a handy manner
 	private Date createDate(int year, int month, int day) {
 		Calendar calendar = Calendar.getInstance();
-		calendar.set(year, month, day);
+		calendar.set(year, month, day, 0, 0, 0);
+		calendar.set(Calendar.MILLISECOND, 0);
 		return calendar.getTime();
 	}
 
@@ -50,16 +51,16 @@ public class QuotesTest {
 		final double HIGH = 20.0;
 		final double LOW = 5.0;
 		final double VOLUME = 1000.0;
-		final Date DATE = createDate(2000, 1, 1);
+		final Date DATE = createDate(2000, Calendar.JANUARY, 1);
 
-		// create quotes entry 
-		QuotesEntry input = new QuotesEntry(OPEN, HIGH, LOW, CLOSE,
-				VOLUME, DATE);
-		
+		// create quotes entry
+		QuotesEntry input = new QuotesEntry(OPEN, HIGH, LOW, CLOSE, VOLUME,
+				DATE);
+
 		// insert quotes entry into quotes
 		final Quotes quotes = new Quotes("", "");
 		quotes.insertEntry(input);
-		
+
 		// get the inserted quotes entry back
 		QuotesEntry output = quotes.iterator().next();
 
@@ -77,11 +78,11 @@ public class QuotesTest {
 	public void testSortAscending() {
 		// create sample entries in subsequent years
 		final QuotesEntry ENTRY1 = new QuotesEntry();
-		ENTRY1.date = createDate(2001, 1, 1);
+		ENTRY1.date = createDate(2001, Calendar.JANUARY, 1);
 		final QuotesEntry ENTRY2 = new QuotesEntry();
-		ENTRY2.date = createDate(2002, 1, 1);
+		ENTRY2.date = createDate(2002, Calendar.JANUARY, 1);
 		final QuotesEntry ENTRY3 = new QuotesEntry();
-		ENTRY3.date = createDate(2003, 1, 1);
+		ENTRY3.date = createDate(2003, Calendar.JANUARY, 1);
 
 		// insert the entries in descenting order
 		Quotes quotes = new Quotes("", "");

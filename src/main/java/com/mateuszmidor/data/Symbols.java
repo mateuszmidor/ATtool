@@ -4,7 +4,7 @@ import java.util.LinkedList;
 
 /**
  * List of symbols to pass around, eg. CDR, KGHM, PZU 
- * @author mateusz
+ * @author Mateusz Midor
  *
  */
 public class Symbols extends LinkedList<String> {

@@ -148,6 +148,7 @@
 						<outputFormat>HTML</outputFormat>
 					</outputFormats>
 					<detectInlinedCode>true</detectInlinedCode>
+					<threads>2</threads>
 				</configuration>
 			</plugin>
 		</plugins>

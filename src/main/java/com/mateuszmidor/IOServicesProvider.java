@@ -16,4 +16,6 @@ public interface IOServicesProvider {
 	OutputStream getOutputStreamForFile(Path filename) throws ATtoolException;
 
 	InputStream getInputStreamForURI(URI uri) throws ATtoolException;
+    void closeStream(InputStream is);
+    void closeStream(OutputStream os);
 }

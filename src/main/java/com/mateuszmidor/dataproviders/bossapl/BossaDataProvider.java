@@ -23,102 +23,97 @@ import com.mateuszmidor.dataproviders.SymbolToNameMap;
  */
 public abstract class BossaDataProvider extends DataProvider {
 
-	// uri for symbols file (regular text file)
-	abstract protected URI getSymbolsFileURI();
+    // uri for symbols file (regular text file)
+    protected abstract URI getSymbolsFileURI();
 
-	// uri for quotes data file (file is ZIP archive)
-	abstract protected URI getQuotesFileURI();
+    // uri for quotes data file (file is ZIP archive)
+    protected abstract URI getQuotesFileURI();
 
-	@Override
-	protected SymbolToNameMap fetchSymbolToNameMap()
-			throws DataProviderException {
+    @Override
+    protected SymbolToNameMap fetchSymbolToNameMap() throws DataProviderException {
 
-		URI symbolsUri = getSymbolsFileURI();
-		try (InputStream is = IOServices.getInputStreamForURI(symbolsUri)) {
+        URI symbolsUri = getSymbolsFileURI();
+        InputStream is = null;
+        try {
+            is = IOServices.getInputStreamForURI(symbolsUri);
+            return BossaListParser.parse(is);
 
-			SymbolToNameMap map = BossaListParser.parse(is);
-			return map;
+        } catch (ATtoolException e1) {
+            throw new DataProviderException("Error during parsing bossa.pl symbol list: " + symbolsUri.toString(), e1);
+        } finally {
+            IOServices.closeStream(is);
+        }
 
-		} catch (IOException e) {
-			throw new DataProviderException(
-					"Error during closing stream for bossa.pl symbol list:"
-							+ symbolsUri.toString(), e);
-		} catch (ATtoolException e1) {
-			throw new DataProviderException(
-					"Error during parsing bossa.pl symbol list: "
-							+ symbolsUri.toString(), e1);
-		}
+    }
 
-	}
+    @Override
+    protected Quotes fetchQuotesForSymbol(String symbol) throws DataProviderException {
 
-	@Override
-	protected Quotes fetchQuotesForSymbol(String symbol)
-			throws DataProviderException {
+        URI quotesUri = getQuotesFileURI();
+        InputStream is = null;
+        try {
+            is = IOServices.getInputStreamForURI(quotesUri);
+            ZipInputStream zipIn = new ZipInputStream(is);
+            return loadQuotesFromZip(symbol, zipIn);
 
-		URI quotesUri = getQuotesFileURI();
-		try (InputStream is = IOServices.getInputStreamForURI(quotesUri)) {
+        } catch (ATtoolException e1) {
+            throw new DataProviderException("Error during parsing bossa.pl quotes data: " + quotesUri.toString(), e1);
+        } catch (IOException e) {
+            throw new DataProviderException("Error during browsing bossa.pl ZIP archive: " + quotesUri.toString(), e);
+        } finally {
+            IOServices.closeStream(is);
+        }
+    }
 
-			ZipInputStream zipIn = new ZipInputStream(is);
-			Quotes quotes = loadQuotesFromZip(symbol, zipIn); 
-			return quotes;
-			
-		} catch (IOException e) {
-			throw new DataProviderException(
-					"Error during browsing bossa.pl ZIP archive: "
-							+ quotesUri.toString(), e);
-		} catch (ATtoolException e1) {
-			throw new DataProviderException(
-					"Error during parsing bossa.pl quotes data: "
-							+ quotesUri.toString(), e1);
-		}
-	}
+    /**
+     * Finds and fetches quotes data from a ZIP stream for a given symbol
+     * 
+     * @param symbol
+     *            - what to look for
+     * @param zipIn
+     *            - where to look
+     * @return Quotes - data fetched from ZIP
+     * @throws IOException
+     *             - from ZIP stream
+     * @throws DataProviderException
+     *             - from bossa.pl data parser
+     */
+    private Quotes loadQuotesFromZip(String symbol, ZipInputStream zipIn) throws IOException, DataProviderException {
 
-	/**
-	 * Finds and fetches quotes data from a ZIP stream for a given symbol
-	 * @param symbol - what to look for 
-	 * @param zipIn - where to look
-	 * @return Quotes - data fetched from ZIP
-	 * @throws IOException - from ZIP stream 
-	 * @throws DataProviderException - from bossa.pl data parser
-	 */
-	private Quotes loadQuotesFromZip(String symbol, ZipInputStream zipIn)
-			throws IOException, DataProviderException {
-		
-		// look for the right file in the archive
-		ZipEntry entry = zipIn.getNextEntry();
-		while (null != entry) {
+        // look for the right file in the archive
+        ZipEntry entry = zipIn.getNextEntry();
+        while (null != entry) {
 
-			// file name to symbol name
-			String symbolName = getSymbolNameFromFileName(entry.getName());
+            // file name to symbol name
+            String symbolName = getSymbolNameFromFileName(entry.getName());
 
-			// is this the entry we are looking for?
-			if (symbolName.equalsIgnoreCase(symbol)) {
+            // is this the entry we are looking for?
+            if (symbolName.equalsIgnoreCase(symbol)) {
 
-				// file found 
-				// get the name for symbol
-				String fullName = getFullNameForSymbol(symbol);
-				
-				// parse the data
-				Quotes data = BossaQuotesParser.parse(symbolName, fullName,
-						zipIn);
+                // file found
+                // get the name for symbol
+                String fullName = getFullNameForSymbol(symbol);
 
-				zipIn.closeEntry();
-				
-				// return the data
-				return data;
-			}
+                // parse the data
+                Quotes data = BossaQuotesParser.parse(symbolName, fullName, zipIn);
 
-			zipIn.closeEntry();
-			entry = zipIn.getNextEntry();
-		}
-		
-		// file not found in ZIP stream
-		return Quotes.EMPTY_QUOTES;
-	}
+                zipIn.closeEntry();
 
-	private String getSymbolNameFromFileName(String filename) {
-		// symbol name is file name without extension
-		return Files.getNameWithoutExtension(filename);
-	}
+                // return the data
+                return data;
+            }
+
+            zipIn.closeEntry();
+            entry = zipIn.getNextEntry();
+        }
+
+        // file not found in ZIP stream
+        return Quotes.EMPTY_QUOTES;
+    }
+
+    private String getSymbolNameFromFileName(String filename) {
+        // symbol name is file name without extension
+        return Files.getNameWithoutExtension(filename);
+    }
 
 }

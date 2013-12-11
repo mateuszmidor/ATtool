@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders.bossapl;
+package com.mateuszmidor.data.providers.bossapl;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -10,9 +10,10 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.mateuszmidor.dataproviders.DataProviderException;
-import com.mateuszmidor.dataproviders.Quotes;
-import com.mateuszmidor.dataproviders.QuotesEntry;
+import com.mateuszmidor.data.Quotes;
+import com.mateuszmidor.data.QuotesEntry;
+import com.mateuszmidor.data.providers.DataProviderException;
+import com.mateuszmidor.data.providers.bossapl.BossaQuotesParser;
 
 public class BossaQuotesParserTest {
 

@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders.bossapl;
+package com.mateuszmidor.data.providers.bossapl;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
-import com.mateuszmidor.dataproviders.DataProviderException;
-import com.mateuszmidor.dataproviders.SymbolNamePair;
-import com.mateuszmidor.dataproviders.SymbolToNameMap;
+import com.mateuszmidor.data.SymbolNamePair;
+import com.mateuszmidor.data.SymbolNameMap;
+import com.mateuszmidor.data.providers.DataProviderException;
 
 /**
  * Bossa.pl symbol list parser.
@@ -23,7 +23,7 @@ public class BossaListParser {
 	private BossaListParser() {
 	}
 
-	public static SymbolToNameMap parse(InputStream is)
+	public static SymbolNameMap parse(InputStream is)
 			throws DataProviderException {
 
 		BufferedReader br = new BufferedReader(new InputStreamReader(is,
@@ -33,7 +33,7 @@ public class BossaListParser {
 		skipListHeader(br);
 
 		// prepare buffer for symbol-name pairs
-		SymbolToNameMap map = new SymbolToNameMap();
+		SymbolNameMap map = new SymbolNameMap();
 
 		// fetch symbol-name pairs and put them into map
 		for (SymbolNamePair e = getEntry(br); e != SymbolNamePair.EMPTY_ENTRY; e = getEntry(br)) {

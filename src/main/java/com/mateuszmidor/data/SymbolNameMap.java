@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders;
+package com.mateuszmidor.data;
 
 import java.util.HashMap;
 
@@ -7,6 +7,6 @@ import java.util.HashMap;
  * @author mateusz
  *
  */
-public class SymbolToNameMap extends HashMap<String, String>{
+public class SymbolNameMap extends HashMap<String, String>{
 	private static final long serialVersionUID = 1L;
 }

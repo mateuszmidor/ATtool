@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders;
+package com.mateuszmidor.data.providers;
 
 import com.mateuszmidor.ATtoolException;
 

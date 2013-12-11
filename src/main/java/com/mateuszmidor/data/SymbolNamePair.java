@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders;
+package com.mateuszmidor.data;
 
 /**
  * Class representing symbol-name pair, eg. EUR-Euro. Enforces

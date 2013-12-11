@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders.bossapl;
+package com.mateuszmidor.data.providers.bossapl;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -9,9 +9,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import com.google.common.base.Charsets;
-import com.mateuszmidor.dataproviders.DataProviderException;
-import com.mateuszmidor.dataproviders.Quotes;
-import com.mateuszmidor.dataproviders.QuotesEntry;
+import com.mateuszmidor.data.Quotes;
+import com.mateuszmidor.data.QuotesEntry;
+import com.mateuszmidor.data.providers.DataProviderException;
 
 /**
  * Quotes parser for bossa.pl text file format

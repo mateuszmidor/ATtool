@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders.bossapl;
+package com.mateuszmidor.data.providers.bossapl;
 
 import java.io.IOException;
 import java.io.InputStream;
@@ -9,10 +9,10 @@ import java.util.zip.ZipInputStream;
 import com.google.common.io.Files;
 import com.mateuszmidor.ATtoolException;
 import com.mateuszmidor.IOServices;
-import com.mateuszmidor.dataproviders.DataProvider;
-import com.mateuszmidor.dataproviders.DataProviderException;
-import com.mateuszmidor.dataproviders.Quotes;
-import com.mateuszmidor.dataproviders.SymbolToNameMap;
+import com.mateuszmidor.data.Quotes;
+import com.mateuszmidor.data.SymbolNameMap;
+import com.mateuszmidor.data.providers.DataProvider;
+import com.mateuszmidor.data.providers.DataProviderException;
 
 /**
  * Base bossa.pl quotes data provider. To be implemented by derived classes
@@ -30,7 +30,7 @@ public abstract class BossaDataProvider extends DataProvider {
     protected abstract URI getQuotesFileURI();
 
     @Override
-    protected SymbolToNameMap fetchSymbolToNameMap() throws DataProviderException {
+    protected SymbolNameMap fetchSymbolToNameMap() throws DataProviderException {
 
         URI symbolsUri = getSymbolsFileURI();
         InputStream is = null;

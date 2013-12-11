@@ -1,10 +1,10 @@
-package com.mateuszmidor.dataproviders;
+package com.mateuszmidor.data;
 
 import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.mateuszmidor.dataproviders.SymbolNamePair;
+import com.mateuszmidor.data.SymbolNamePair;
 
 public class SymbolNamePairTest {
 

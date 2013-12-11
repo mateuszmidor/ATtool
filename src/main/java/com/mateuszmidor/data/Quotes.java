@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders;
+package com.mateuszmidor.data;
 
 import java.util.ArrayList;
 import java.util.Collections;

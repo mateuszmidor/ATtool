@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders.bossapl;
+package com.mateuszmidor.data.providers.bossapl;
 
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
@@ -7,8 +7,9 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
-import com.mateuszmidor.dataproviders.DataProviderException;
-import com.mateuszmidor.dataproviders.SymbolToNameMap;
+import com.mateuszmidor.data.SymbolNameMap;
+import com.mateuszmidor.data.providers.DataProviderException;
+import com.mateuszmidor.data.providers.bossapl.BossaListParser;
 
 public class BossaListParserTest {
 
@@ -69,7 +70,7 @@ public class BossaListParserTest {
 
 	@Test
 	public void testParseValidSymbolList() throws DataProviderException {
-		SymbolToNameMap list = BossaListParser.parse(BOSSA_VALID_LIST_STREAM);
+		SymbolNameMap list = BossaListParser.parse(BOSSA_VALID_LIST_STREAM);
 
 		Assert.assertTrue(list.containsKey("EUR"));
 		Assert.assertEquals("euro", list.get("EUR"));

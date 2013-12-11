@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders;
+package com.mateuszmidor.data;
 
 import java.util.Calendar;
 import java.util.Date;
@@ -7,6 +7,9 @@ import java.util.Iterator;
 import junit.framework.Assert;
 
 import org.junit.Test;
+
+import com.mateuszmidor.data.Quotes;
+import com.mateuszmidor.data.QuotesEntry;
 
 public class QuotesTest {
 

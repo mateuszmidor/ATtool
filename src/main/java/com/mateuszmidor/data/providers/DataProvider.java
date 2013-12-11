@@ -1,4 +1,8 @@
-package com.mateuszmidor.dataproviders;
+package com.mateuszmidor.data.providers;
+
+import com.mateuszmidor.data.Quotes;
+import com.mateuszmidor.data.SymbolNameMap;
+import com.mateuszmidor.data.Symbols;
 
 /**
  * Base class for various sources of quotes data providers
@@ -7,7 +11,7 @@ package com.mateuszmidor.dataproviders;
  * 
  */
 public abstract class DataProvider {
-    private SymbolToNameMap symbolToNameMap = new SymbolToNameMap();
+    private SymbolNameMap symbolToNameMap = new SymbolNameMap();
 
     // pattern: algorithm
     // below three functions to be implemented in derived classes
@@ -15,9 +19,9 @@ public abstract class DataProvider {
 
     protected abstract Quotes fetchQuotesForSymbol(String symbol) throws DataProviderException;
 
-    protected abstract SymbolToNameMap fetchSymbolToNameMap() throws DataProviderException;
+    protected abstract SymbolNameMap fetchSymbolToNameMap() throws DataProviderException;
 
-    private SymbolToNameMap getSymbolToNameMap() throws DataProviderException {
+    private SymbolNameMap getSymbolToNameMap() throws DataProviderException {
 
         // lazy initialization
         if (symbolToNameMap.isEmpty()) {

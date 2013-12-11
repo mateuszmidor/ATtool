@@ -1,4 +1,4 @@
-package com.mateuszmidor.dataproviders.bossapl;
+package com.mateuszmidor.data.providers.bossapl;
 
 import static org.easymock.EasyMock.createMock;
 import static org.easymock.EasyMock.expect;
@@ -21,9 +21,10 @@ import org.junit.Test;
 
 import com.mateuszmidor.IOServices;
 import com.mateuszmidor.IOServicesProvider;
-import com.mateuszmidor.dataproviders.DataProviderException;
-import com.mateuszmidor.dataproviders.Quotes;
-import com.mateuszmidor.dataproviders.Symbols;
+import com.mateuszmidor.data.Quotes;
+import com.mateuszmidor.data.Symbols;
+import com.mateuszmidor.data.providers.DataProviderException;
+import com.mateuszmidor.data.providers.bossapl.BossaNbpDataProvider;
 
 public class BossaNbpDataProviderTest {
     private static final Path SYMBOLS_FILE_PATH = Paths.get("src/test/java/testData/NbpSymbols.lst");

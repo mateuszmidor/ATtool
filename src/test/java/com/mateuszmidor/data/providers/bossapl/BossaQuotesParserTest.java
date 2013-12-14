@@ -10,9 +10,9 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+import com.mateuszmidor.data.DataProviderException;
 import com.mateuszmidor.data.Quotes;
 import com.mateuszmidor.data.QuotesEntry;
-import com.mateuszmidor.data.providers.DataProviderException;
 import com.mateuszmidor.data.providers.bossapl.BossaQuotesParser;
 
 public class BossaQuotesParserTest {
@@ -67,20 +67,20 @@ public class BossaQuotesParserTest {
 		Iterator<QuotesEntry> it = quotes.iterator();
 
 		e = it.next();
-		Assert.assertEquals(createDate(1997, Calendar.JANUARY, 1), e.date);
-		Assert.assertEquals(10.0, e.open, DELTA);
-		Assert.assertEquals(20.0, e.high, DELTA);
-		Assert.assertEquals(5.0, e.low, DELTA);
-		Assert.assertEquals(15.0, e.close, DELTA);
-		Assert.assertEquals(100.0, e.volume, DELTA);
+		Assert.assertEquals(createDate(1997, Calendar.JANUARY, 1), e.getDate());
+		Assert.assertEquals(10.0, e.getOpen(), DELTA);
+		Assert.assertEquals(20.0, e.getHigh(), DELTA);
+		Assert.assertEquals(5.0, e.getLow(), DELTA);
+		Assert.assertEquals(15.0, e.getClose(), DELTA);
+		Assert.assertEquals(100.0, e.getVolume(), DELTA);
 
 		e = it.next();
-		Assert.assertEquals(createDate(1997, Calendar.JANUARY, 2), e.date);
-		Assert.assertEquals(100.0, e.open, DELTA);
-		Assert.assertEquals(200.0, e.high, DELTA);
-		Assert.assertEquals(50.0, e.low, DELTA);
-		Assert.assertEquals(150.0, e.close, DELTA);
-		Assert.assertEquals(200.0, e.volume, DELTA);
+		Assert.assertEquals(createDate(1997, Calendar.JANUARY, 2), e.getDate());
+		Assert.assertEquals(100.0, e.getOpen(), DELTA);
+		Assert.assertEquals(200.0, e.getHigh(), DELTA);
+		Assert.assertEquals(50.0, e.getLow(), DELTA);
+		Assert.assertEquals(150.0, e.getClose(), DELTA);
+		Assert.assertEquals(200.0, e.getVolume(), DELTA);
 	}
 
 	@Test(expected = DataProviderException.class)

@@ -69,23 +69,23 @@ public class QuotesTest {
 
 		// check the entry for proper values
 		final double DELTA_VAL = 0.0001;
-		Assert.assertEquals(CLOSE, output.close, DELTA_VAL);
-		Assert.assertEquals(OPEN, output.open, DELTA_VAL);
-		Assert.assertEquals(HIGH, output.high, DELTA_VAL);
-		Assert.assertEquals(LOW, output.low, DELTA_VAL);
-		Assert.assertEquals(VOLUME, output.volume, DELTA_VAL);
-		Assert.assertEquals(DATE, output.date);
+		Assert.assertEquals(CLOSE, output.getClose(), DELTA_VAL);
+		Assert.assertEquals(OPEN, output.getOpen(), DELTA_VAL);
+		Assert.assertEquals(HIGH, output.getHigh(), DELTA_VAL);
+		Assert.assertEquals(LOW, output.getLow(), DELTA_VAL);
+		Assert.assertEquals(VOLUME, output.getVolume(), DELTA_VAL);
+		Assert.assertEquals(DATE, output.getDate());
 	}
 
 	@Test
 	public void testSortAscending() {
 		// create sample entries in subsequent years
 		final QuotesEntry ENTRY1 = new QuotesEntry();
-		ENTRY1.date = createDate(2001, Calendar.JANUARY, 1);
+		ENTRY1.setDate(createDate(2001, Calendar.JANUARY, 1));
 		final QuotesEntry ENTRY2 = new QuotesEntry();
-		ENTRY2.date = createDate(2002, Calendar.JANUARY, 1);
+		ENTRY2.setDate(createDate(2002, Calendar.JANUARY, 1));
 		final QuotesEntry ENTRY3 = new QuotesEntry();
-		ENTRY3.date = createDate(2003, Calendar.JANUARY, 1);
+		ENTRY3.setDate(createDate(2003, Calendar.JANUARY, 1));
 
 		// insert the entries in descenting order
 		Quotes quotes = new Quotes("", "");

@@ -21,9 +21,9 @@ import org.junit.Test;
 
 import com.mateuszmidor.IOServices;
 import com.mateuszmidor.IOServicesProvider;
+import com.mateuszmidor.data.DataProviderException;
 import com.mateuszmidor.data.Quotes;
 import com.mateuszmidor.data.Symbols;
-import com.mateuszmidor.data.providers.DataProviderException;
 import com.mateuszmidor.data.providers.bossapl.BossaNbpDataProvider;
 
 public class BossaNbpDataProviderTest {

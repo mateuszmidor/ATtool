@@ -9,9 +9,9 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 import com.google.common.base.Charsets;
+import com.mateuszmidor.data.DataProviderException;
 import com.mateuszmidor.data.Quotes;
 import com.mateuszmidor.data.QuotesEntry;
-import com.mateuszmidor.data.providers.DataProviderException;
 
 /**
  * Quotes parser for bossa.pl text file format
@@ -97,12 +97,12 @@ public class BossaQuotesParser {
 
 		QuotesEntry entry = new QuotesEntry();
 		try {
-			entry.date = parseBossaPlDate(date);
-			entry.open = parseBossaPlFloat(open);
-			entry.high = parseBossaPlFloat(high);
-			entry.low = parseBossaPlFloat(low);
-			entry.close = parseBossaPlFloat(close);
-			entry.volume = parseBossaPlFloat(volume);
+			entry.setDate(parseBossaPlDate(date));
+			entry.setOpen(parseBossaPlFloat(open));
+			entry.setHigh(parseBossaPlFloat(high));
+			entry.setLow(parseBossaPlFloat(low));
+			entry.setClose(parseBossaPlFloat(close));
+			entry.setVolume(parseBossaPlFloat(volume));
 		} catch (DataProviderException | NumberFormatException e) {
 			throw new DataProviderException(
 					"Error during parsing bossa.pl quotes entry: " + s, e);

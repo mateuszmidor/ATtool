@@ -9,9 +9,9 @@ import java.util.Scanner;
 
 import com.google.common.base.Charsets;
 import com.google.common.io.Files;
+import com.mateuszmidor.data.DataProviderException;
 import com.mateuszmidor.data.SymbolNamePair;
 import com.mateuszmidor.data.SymbolNameMap;
-import com.mateuszmidor.data.providers.DataProviderException;
 
 /**
  * Bossa.pl symbol list parser.

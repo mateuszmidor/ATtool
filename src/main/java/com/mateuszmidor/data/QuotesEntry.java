@@ -9,12 +9,12 @@ import java.util.Date;
  *
  */
 public class QuotesEntry {
-	public double open;
-	public double high;
-	public double low;
-	public double close;
-	public double volume;
-	public Date date;
+	private double open;
+	private double high;
+	private double low;
+	private double close;
+	private double volume;
+	private Date date;
 	
 	// can be used to mark the end of entries while fetching from a stream
 	public static final QuotesEntry EMPTY_ENTRY = new QuotesEntry();
@@ -23,7 +23,6 @@ public class QuotesEntry {
 	
 	public QuotesEntry(double open, double high, double low, double close,
 			double volume, Date date) {
-		super();
 		this.open = open;
 		this.high = high;
 		this.low = low;
@@ -31,5 +30,53 @@ public class QuotesEntry {
 		this.volume = volume;
 		this.date = date;
 	}
+
+    public double getOpen() {
+        return open;
+    }
+
+    public void setOpen(double open) {
+        this.open = open;
+    }
+
+    public double getHigh() {
+        return high;
+    }
+
+    public void setHigh(double high) {
+        this.high = high;
+    }
+
+    public double getLow() {
+        return low;
+    }
+
+    public void setLow(double low) {
+        this.low = low;
+    }
+
+    public double getClose() {
+        return close;
+    }
+
+    public void setClose(double close) {
+        this.close = close;
+    }
+
+    public double getVolume() {
+        return volume;
+    }
+
+    public void setVolume(double volume) {
+        this.volume = volume;
+    }
+
+    public Date getDate() {
+        return date;
+    }
+
+    public void setDate(Date date) {
+        this.date = date;
+    }
 
 }

@@ -7,8 +7,8 @@ import junit.framework.Assert;
 
 import org.junit.Test;
 
+import com.mateuszmidor.data.DataProviderException;
 import com.mateuszmidor.data.SymbolNameMap;
-import com.mateuszmidor.data.providers.DataProviderException;
 import com.mateuszmidor.data.providers.bossapl.BossaListParser;
 
 public class BossaListParserTest {

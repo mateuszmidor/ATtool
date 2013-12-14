@@ -49,7 +49,7 @@ public class Quotes implements Iterable<QuotesEntry> {
 	public void sortAscending() {
 		Comparator<QuotesEntry> cmp = new Comparator<QuotesEntry>() {
 			public int compare(QuotesEntry e1, QuotesEntry e2) {
-				return e1.date.compareTo(e2.date);
+				return e1.getDate().compareTo(e2.getDate());
 			}
 		};
 

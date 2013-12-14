@@ -1,8 +1,5 @@
-package com.mateuszmidor.data.providers;
+package com.mateuszmidor.data;
 
-import com.mateuszmidor.data.Quotes;
-import com.mateuszmidor.data.SymbolNameMap;
-import com.mateuszmidor.data.Symbols;
 
 /**
  * Base class for various sources of quotes data providers

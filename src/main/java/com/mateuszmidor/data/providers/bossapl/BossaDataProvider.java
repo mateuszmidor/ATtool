@@ -9,10 +9,10 @@ import java.util.zip.ZipInputStream;
 import com.google.common.io.Files;
 import com.mateuszmidor.ATtoolException;
 import com.mateuszmidor.IOServices;
+import com.mateuszmidor.data.DataProvider;
+import com.mateuszmidor.data.DataProviderException;
 import com.mateuszmidor.data.Quotes;
 import com.mateuszmidor.data.SymbolNameMap;
-import com.mateuszmidor.data.providers.DataProvider;
-import com.mateuszmidor.data.providers.DataProviderException;
 
 /**
  * Base bossa.pl quotes data provider. To be implemented by derived classes

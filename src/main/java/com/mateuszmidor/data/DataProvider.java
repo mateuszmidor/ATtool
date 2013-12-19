@@ -1,5 +1,7 @@
 package com.mateuszmidor.data;
 
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 /**
  * Base class for various sources of quotes data providers
@@ -8,6 +10,7 @@ package com.mateuszmidor.data;
  * 
  */
 public abstract class DataProvider {
+    private static final Logger LOGGER = LoggerFactory.getLogger(DataProvider.class);
     private SymbolNameMap symbolToNameMap = new SymbolNameMap();
 
     // pattern: algorithm
@@ -34,9 +37,14 @@ public abstract class DataProvider {
         return getSymbolToNameMap().keySet().contains(upcaseSymbol);
     }
 
-    public Quotes getQuotesForSymbol(String symbol) throws DataProviderException {
+    public Quotes getQuotesForSymbol(String symbol) {
 
-        return fetchQuotesForSymbol(symbol);
+        try {
+            return fetchQuotesForSymbol(symbol);
+        } catch (DataProviderException e) {
+            LOGGER.error(String.format("Quotes fetching failed for %s(%s)", symbol, getGroupName()), e);
+            return Quotes.EMPTY_QUOTES;
+        }
     }
 
     public String getFullNameForSymbol(String symbol) throws DataProviderException {
@@ -44,10 +52,16 @@ public abstract class DataProvider {
         return getSymbolToNameMap().get(symbol);
     }
 
-    public Symbols getAvailableSymbols() throws DataProviderException {
+    public Symbols getAvailableSymbols() {
 
         Symbols symbols = new Symbols();
-        symbols.addAll(getSymbolToNameMap().keySet());
-        return symbols;
+        try {
+            symbols.addAll(getSymbolToNameMap().keySet());
+            return symbols;
+        } catch (DataProviderException e) {
+            LOGGER.error(String.format("Symbols fetching failed for group %s", getGroupName()), e);
+            return Symbols.EMPTY_SYMBOLS;
+        }
+
     }
 }

@@ -9,4 +9,5 @@ import java.util.LinkedList;
  */
 public class Symbols extends LinkedList<String> {
 	private static final long serialVersionUID = 1L;
+    public static final Symbols EMPTY_SYMBOLS = new Symbols();
 }

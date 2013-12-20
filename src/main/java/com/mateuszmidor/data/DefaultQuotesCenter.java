@@ -16,11 +16,11 @@ public class DefaultQuotesCenter implements QuotesCenter {
     @Override
     public void addDataProvider(DataProvider provider) throws DataProviderException {
         String groupName = provider.getGroupName();
-        throwOnDuplicatedProvider(groupName);
+        throwOnDuplicatedProviderForGroup(groupName);
         providers.put(groupName, provider);
     }
 
-    private void throwOnDuplicatedProvider(String groupName) throws DataProviderException {
+    private void throwOnDuplicatedProviderForGroup(String groupName) throws DataProviderException {
         if (null != getProviderForGroupName(groupName)) {
             throw new DataProviderException(String.format("Provider for group %s already on the list", groupName));
         }

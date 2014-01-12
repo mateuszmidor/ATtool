@@ -15,7 +15,7 @@ public class VolumeAnalyzerTest {
 
     private static final double DELTA = 0.001;
     private Quotes quotes;
-    
+
     @Before
     public void setup() {
         quotes = new Quotes("tst", "test");
@@ -25,13 +25,13 @@ public class VolumeAnalyzerTest {
         quotes.insertEntry(new QuotesEntry(0, 0, 0, 0, 40, null));
         quotes.insertEntry(new QuotesEntry(0, 0, 0, 0, 50, null));
     }
-    
+
     @Test
     public void test() {
         Analyzer testObject = new VolumeAnalyzer();
         AnalysisResult result = testObject.analyze(quotes, null);
         DataSeries volume = result.get("volume");
-        
+
         Assert.assertNotNull(volume);
         Assert.assertEquals(10, volume.get(0).getValue(), DELTA);
         Assert.assertEquals(20, volume.get(1).getValue(), DELTA);
